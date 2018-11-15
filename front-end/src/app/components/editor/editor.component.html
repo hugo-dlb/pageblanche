@@ -1,0 +1,38 @@
+<div class="loading" *ngIf="loading">
+    Loading...
+</div>
+
+<div class="editor">
+    <ngx-codemirror #codeMirror (ngModel)="codeMirrorOutput"
+                    [options]="{lineNumbers: true, theme: 'darcula', mode: 'htmlmixed', indentUnit: 4,
+                    smartIndent: false, electricChars: false, indentWithTabs: true, autofocus: true,
+                    extraKeys: extraKeys}">
+    </ngx-codemirror>
+
+    <div class="secondsLeft">
+        {{secondsLeft}}
+    </div>
+</div>
+
+<div [ngClass]="{'hidden': !displayChoiceOverlay}" class="overlay">
+    Your choice:
+
+    <ng-container *ngIf="keyChoice">
+        <span class="choice">
+            Press the key {{keyChoice}} at line {{cursorLine}} and column {{cursorColumn}}
+        </span>
+    </ng-container>
+
+    <ng-container *ngIf="deleteChoice">
+        <span class="choice">
+            Press the key DELETE at line {{cursorLine}} and column {{cursorColumn}}
+        </span>
+    </ng-container>
+
+    <br/>
+
+    <button #confirmBtn (click)="confirm()">Confirm</button>
+    <button (click)="cancel()">Cancel</button>
+</div>
+
+<button [routerLink]="['/home']" class="home-button">Home</button>

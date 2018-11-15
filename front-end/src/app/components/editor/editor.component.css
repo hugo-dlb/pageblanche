@@ -1,0 +1,49 @@
+.editor {
+    height: 100vh;
+}
+
+.loading {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    z-index: 20;
+    color: white;
+}
+
+.overlay {
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.home-button {
+    position: fixed;
+    z-index: 50;
+    right: 10px;
+    top: 10px;
+}
+
+.secondsLeft {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 600%;
+    margin: 20px;
+    color: lightgrey;
+}

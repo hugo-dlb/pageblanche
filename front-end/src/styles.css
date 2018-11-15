@@ -1,0 +1,36 @@
+@import "~codemirror/lib/codemirror.css";
+@import "~codemirror/theme/darcula.css";
+
+@import '~ngx-toastr/toastr.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    vertical-align: bottom;
+    cursor: pointer;
+    border: 1px solid #d1d2d3;
+    border-radius: 0.25em;
+    padding: 0 10px;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #eff3f6;
+    background-image: -webkit-linear-gradient(top, #fafbfc, #e4ebf0);
+    background-image: -moz-linear-gradient(top, #fafbfc, #e4ebf0);
+    background-image: linear-gradient(to bottom, #fafbfc, #e4ebf0);
+    background-repeat: repeat-x;
+    background-size: 110% 110%;
+}
+
+.button:hover {
+    background-color: #e6ebf1;
+    background-image: -webkit-linear-gradient(top, #f0f3f6, #dce3ec);
+    background-image: -moz-linear-gradient(top, #f0f3f6, #dce3ec);
+    background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
+    border-color: #afb1b2;
+}
